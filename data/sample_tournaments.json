@@ -1,0 +1,134 @@
+[
+  {
+    "sport": "Cricket",
+    "tournament_name": "Syed Mushtaq Ali Trophy",
+    "level": "National",
+    "start_date": "2025-10-15",
+    "end_date": "2025-11-10",
+    "official_url": "https://www.bcci.tv/domestic",
+    "streaming": "https://www.hotstar.com/",
+    "image": "https://example.com/images/smat.png",
+    "summary": "India's domestic T20 championship featuring state teams; key platform for emerging talent."
+  },
+  {
+    "sport": "Football",
+    "tournament_name": "Durand Cup",
+    "level": "National",
+    "start_date": "2025-08-25",
+    "end_date": "2025-09-20",
+    "official_url": "https://www.the-aiff.com/",
+    "streaming": "https://www.jiocinema.com/",
+    "image": "https://example.com/images/durand.png",
+    "summary": "Historic Indian football tournament with clubs from ISL and I-League; knockout and group stages."
+  },
+  {
+    "sport": "Badminton",
+    "tournament_name": "India Open Super 750",
+    "level": "International",
+    "start_date": "2026-01-13",
+    "end_date": "2026-01-18",
+    "official_url": "https://bwfworldtour.bwfbadminton.com/",
+    "streaming": "https://www.jiocinema.com/",
+    "image": "https://example.com/images/indiaopen.png",
+    "summary": "BWF World Tour Super 750 event hosted in India, featuring top-ranked international players."
+  },
+  {
+    "sport": "Running",
+    "tournament_name": "Airtel Delhi Half Marathon",
+    "level": "International",
+    "start_date": "2025-10-19",
+    "end_date": "2025-10-19",
+    "official_url": "https://adhm.procam.in/",
+    "streaming": "https://www.youtube.com/",
+    "image": "https://example.com/images/adhm.png",
+    "summary": "World Athletics Elite Label road race attracting elite runners and mass participation."
+  },
+  {
+    "sport": "Chess",
+    "tournament_name": "National Schools Chess Championship",
+    "level": "School",
+    "start_date": "2025-12-05",
+    "end_date": "2025-12-10",
+    "official_url": "https://aicf.in/",
+    "streaming": "",
+    "image": "https://example.com/images/chess.png",
+    "summary": "AICF recognized national-level event for school players across age categories."
+  },
+  {
+    "sport": "Kabaddi",
+    "tournament_name": "Pro Kabaddi League",
+    "level": "National",
+    "start_date": "2025-12-01",
+    "end_date": "2026-02-20",
+    "official_url": "https://www.prokabaddi.com/",
+    "streaming": "https://www.jiocinema.com/",
+    "image": "https://example.com/images/pkl.png",
+    "summary": "Top professional kabaddi league in India featuring franchise teams in a caravan format."
+  },
+  {
+    "sport": "Basketball",
+    "tournament_name": "U18 State Basketball Championship (UP)",
+    "level": "State",
+    "start_date": "2025-09-10",
+    "end_date": "2025-09-14",
+    "official_url": "https://www.bfi.org.in/",
+    "streaming": "",
+    "image": "https://example.com/images/basketball.png",
+    "summary": "State-level youth basketball championship organized under BFI guidelines."
+  },
+  {
+    "sport": "Table Tennis",
+    "tournament_name": "National Ranking Table Tennis (East Zone)",
+    "level": "Zonal/Regional",
+    "start_date": "2025-09-18",
+    "end_date": "2025-09-22",
+    "official_url": "https://www.ttfi.org/",
+    "streaming": "",
+    "image": "https://example.com/images/tt.png",
+    "summary": "Zonal ranking event contributing to national standings for multiple age categories."
+  },
+  {
+    "sport": "Swimming",
+    "tournament_name": "Khelo India University Games - Aquatics",
+    "level": "College/University",
+    "start_date": "2025-11-05",
+    "end_date": "2025-11-09",
+    "official_url": "https://kheloindia.gov.in/",
+    "streaming": "https://www.jiocinema.com/",
+    "image": "https://example.com/images/khelo-swim.png",
+    "summary": "University-level swimming championships with heats and finals across standard events."
+  },
+  {
+    "sport": "Cycling",
+    "tournament_name": "National Road Cycling Championships",
+    "level": "National",
+    "start_date": "2025-12-12",
+    "end_date": "2025-12-16",
+    "official_url": "https://cyclingfederationofindia.org/",
+    "streaming": "",
+    "image": "https://example.com/images/cycling.png",
+    "summary": "Time-trial and road-race events across elite and junior categories."
+  },
+  {
+    "sport": "Yoga",
+    "tournament_name": "Inter-District Yoga Championship (Haryana)",
+    "level": "District",
+    "start_date": "2025-09-07",
+    "end_date": "2025-09-07",
+    "official_url": "https://yogasportsfederation.in/",
+    "streaming": "",
+    "image": "https://example.com/images/yoga.png",
+    "summary": "District-level asana and rhythm events following national yoga sports rules."
+  },
+  {
+    "sport": "Gym",
+    "tournament_name": "Delhi Classic Bodybuilding Championship",
+    "level": "Club/Academy",
+    "start_date": "2025-09-28",
+    "end_date": "2025-09-28",
+    "official_url": "https://indianbodybuilding.co.in/",
+    "streaming": "",
+    "image": "https://example.com/images/gym.png",
+    "summary": "Amateur bodybuilding competition across weight classes under local federation."
+  }
+]

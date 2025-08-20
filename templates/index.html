@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GenAI Sports Tournaments</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 24px; background:#0b0b0f; color:#eaeaea; }
+    .card { background:#14141a; padding:16px; border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,.2); }
+    input, select { padding:8px; border-radius:8px; border:1px solid #333; background:#0f0f14; color:#eaeaea; }
+    button { padding:10px 14px; border-radius:10px; border:none; background:#3b82f6; color:#fff; cursor:pointer; }
+    table { width:100%; border-collapse: collapse; margin-top: 16px; }
+    th, td { padding:10px; border-bottom:1px solid #222; text-align:left; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:12px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; }
+    .badge { padding:4px 8px; background:#1f2937; border-radius:999px; font-size:12px; }
+  </style>
+</head>
+<body>
+  <h1>🏆 GenAI Sports Tournaments</h1>
+  <div class="card">
+    <div class="row">
+      <input id="sport" placeholder="Sport e.g., Cricket" />
+      <select id="level">
+        <option value="">Any level</option>
+        <option>Corporate</option><option>School</option><option>College/University</option>
+        <option>Club/Academy</option><option>District</option><option>State</option>
+        <option>Zonal/Regional</option><option>National</option><option>International</option>
+      </select>
+      <input id="from" type="date" />
+      <input id="to" type="date" />
+      <button onclick="load()">Search</button>
+    </div>
+    <table id="tbl">
+      <thead>
+        <tr>
+          <th>Sport</th><th>Tournament</th><th>Level</th><th>Dates</th><th>Links</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script>
+    async function load() {
+      const params = new URLSearchParams();
+      const sport = document.getElementById('sport').value.trim();
+      const level = document.getElementById('level').value;
+      const from = document.getElementById('from').value;
+      const to = document.getElementById('to').value;
+      if (sport) params.set('sport', sport);
+      if (level) params.set('level', level);
+      if (from) params.set('from', from);
+      if (to) params.set('to', to);
+
+      const res = await fetch('/tournaments?' + params.toString());
+      const data = await res.json();
+      const tb = document.querySelector('#tbl tbody');
+      tb.innerHTML = '';
+      for (const t of data) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><span class="badge">${t.sport}</span></td>
+          <td>${t.tournament_name}<div style="font-size:12px;opacity:.8">${t.summary || ''}</div></td>
+          <td>${t.level}</td>
+          <td>${t.start_date} → ${t.end_date}</td>
+          <td>
+            <a href="${t.official_url}" target="_blank">Official</a>
+            ${t.streaming ? ' | <a href="'+t.streaming+'" target="_blank">Stream</a>' : ''}
+          </td>`;
+        tb.appendChild(tr);
+      }
+    }
+    load(); // initial load
+  </script>
+</body>
+</html>
